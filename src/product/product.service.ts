@@ -20,10 +20,6 @@ export class ProductService {
   }
 
   //get categories
-  /*async getCategories(category: string): Promise<Product | undefined> {
-    const Categories = await this.productModel.findOne({ where: category });
-    return Categories;
-  }*/
   async findCategories(): Promise<String[]> {
     const products = await this.productModel.find();
     return products
