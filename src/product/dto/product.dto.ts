@@ -5,4 +5,5 @@ export class CreateProductDTO {
   readonly price: number;
   readonly quantity: number;
   readonly createdAt: Date;
+  readonly UpdatedAt: Date;
 }

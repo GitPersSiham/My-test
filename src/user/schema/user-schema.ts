@@ -11,5 +11,9 @@ export class User {
   readonly email: string;
   @Prop({ require: true })
   readonly password: string;
+  @Prop()
+  createdAt: Date;
+  @Prop()
+  updatedAt: Date;
 }
 export const UserSchema = SchemaFactory.createForClass(User);
