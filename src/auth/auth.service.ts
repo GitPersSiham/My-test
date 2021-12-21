@@ -12,7 +12,6 @@ export class AuthService {
   private readonly logger = new Logger(AuthService.name);
 
   constructor(
-    @Inject(forwardRef(() => UserService))
     @InjectModel(User.name)
     private userModel: Model<UserDocument>,
     private jwtService: JwtService,

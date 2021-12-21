@@ -8,7 +8,6 @@ import { AuthService } from '../auth/auth.service';
 @Injectable()
 export class UserService {
   constructor(
-    @Inject(forwardRef(() => AuthService))
     @InjectModel(User.name)
     private userModel: Model<UserDocument>,
   ) {}
